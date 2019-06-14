@@ -33,8 +33,18 @@
 
     <style type="text/css">
         body {
-        background-color: #FFFFFF;
+        background-color: #808080;
         }
+
+
+
+
+
+
+
+
+
+
         .ui.menu .item img.logo {
         margin-right: 1.5em;
         }
@@ -60,7 +70,7 @@
     <div class="ui container">
         <a href="/" class="header item">
             <!--<img class="logo" src="assets/images/logo.png">-->
-            House Pricing Prediction
+            Bed Bug Prediction
         </a>
         <a href="/" class="item">Home</a>
     </div>
@@ -68,10 +78,18 @@
 
 <div class="ui main text container">
 
-    <h1 class="ui header">One-Click House Pricing Prediction</h1>
+    <h1 class="ui header">Input your dwelling preferences to determine the estimated quarantine period</h1>
 
+    <!--
     <form class="ui form" action="/predict_price" method="post">
+    -->
+    <form class="ui form" action="/D_DIFF_B" method="post">
+<!--
+<form class="ui form" action="/D_DIFF_B" method="post">
+-->
         <div class="field">
+
+            <!--
             <label>Bedrooms</label>
             <select class="ui selection dropdown" name="bedrooms">
                 <option value=""></option>
@@ -81,8 +99,30 @@
                 <option value="4">4</option>
                 <option value="5">5</option>
             </select>
+            -->
+
+            <!--<label>LAST_DM</label>-->
+            <label>Month of the last extermination</label>
+
+            <select class="ui selection dropdown" name="LAST_DM">
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
         </div>
         <div class="field">
+            <!--
             <label>Bathrooms</label>
             <select class="ui selection dropdown" name="bathrooms">
                 <option value=""></option>
@@ -91,12 +131,42 @@
                 <option value="3">3</option>
                 <option value="4">4</option>
             </select>
+            -->
+
+            <!--<label>LAST_DY</label>-->
+
+            <label>Year of the last extermination</label>
+            <select class="ui selection dropdown" name="LAST_DY">
+                <option value=""></option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+            </select>
+
         </div>
         <div class="field">
+
+            <!--
             <label>Square foot</label>
             <input type="text" name="sqft_living15">
+            -->
+
+            <!--<label>EPI_DIST_1</label>-->
+            <label>Distance from interesection (-73.585636, 45.527404) in Parc-Laurier, Le Plateau-Mont-Royal</label>
+
+            <select class="ui selection dropdown" name="EPI_DIST_1">
+                <option value=""></option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+            </select>
+
         </div>
         <div class="field">
+
+            <!--
             <label>Grade</label>
             <select class="ui selection dropdown" name="grade">
                 <option value=""></option>
@@ -114,8 +184,25 @@
                 <option value="12">12</option>
                 <option value="13">13</option>
             </select>
+            -->
+
+            <!--<label>EPI_DIST_4</label>-->
+            <label>Distance from interesection (-73.571239, 45.584338) in Grande-Prairie, Saint-Léonard</label>
+
+            <select class="ui selection dropdown" name="EPI_DIST_4">
+                <option value=""></option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+            </select>
+
         </div>
         <div class="field">
+
+            <!--
             <label>Conditions</label>
             <select class="ui selection dropdown" name="condition">
                 <option value=""></option>
@@ -125,6 +212,21 @@
                 <option value="4">4</option>
                 <option value="5">5</option>
             </select>
+            -->
+
+            <!--<label>EPI_DIST_5</label>-->
+            <label>Distance from interesection (-73.68714399999999, 45.518173) in Grenet, Saint-Laurent</label>
+
+            <select class="ui selection dropdown" name="EPI_DIST_5">
+                <option value=""></option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+            </select>
+
         </div>
         <button class="ui button" type="submit">Submit</button>
     </form>
@@ -134,7 +236,7 @@
 <div class="ui inverted vertical footer segment">
     <div class="ui center aligned container">
         <div class="ui horizontal inverted small divided link list">
-            <a class="item" href="#">CEDB 1260 - BIG DATA ANALYTICS</a>
+            <a class="item" href="#">CEBD 1260 - BIG DATA ANALYTICS - SPRING 2019</a>
         </div>
     </div>
 </div>
